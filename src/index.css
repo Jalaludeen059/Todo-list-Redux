@@ -1,13 +1,142 @@
-body {
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Ubuntu:wght@400;700&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Ubuntu", sans-serif, arial;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.searchItem {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.searchItem input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.add-item-form {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-item-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.add-item-button {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-item-button:hover {
+  background-color: #3e8e41;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.todo-table th, .todo-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.todo-table th {
+  background-color: #f0f0f0;
+}
+
+.todo-row {
+  background-color: #fff;
+}
+
+.todo-row:hover {
+  background-color: #f9f9f9;
+}
+
+.todo-text {
+  font-size: 16px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.todo-buttons {
+  width: 20%;
+  text-align: right;
+}
+
+.edit-button, .delete-button, .up-button, .down-button, .done-button {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+}
+
+.edit-button:hover {
+  background-color: #3e8e41;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  background-color: #e91e63;
+}
+
+.up-button {
+  background-color: #03A9F4;
+}
+
+.up-button:hover {
+  background-color: #2196F3;
+}
+
+.down-button {
+  background-color: #FF9800;
+}
+
+.down-button:hover {
+  background-color: #FFA07A;
+}
+
+.done-button {
+  background-color: #8BC34A;
+}
+
+.done-button:hover {
+  background-color: #7CB342;
 }
